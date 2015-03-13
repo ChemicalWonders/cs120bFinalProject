@@ -22,6 +22,25 @@ Discarded input sections
                 0x00000000        0x6 finalproject.o
  .text.TimerISR
                 0x00000000        0x8 finalproject.o
+ .rodata.blank  0x00000000        0x1 finalproject.o
+ .rodata.flatkey
+                0x00000000        0x1 finalproject.o
+ .rodata.sharpkey
+                0x00000000        0x1 finalproject.o
+ .rodata.letterG
+                0x00000000        0x1 finalproject.o
+ .rodata.letterF
+                0x00000000        0x1 finalproject.o
+ .rodata.letterE
+                0x00000000        0x1 finalproject.o
+ .rodata.letterD
+                0x00000000        0x1 finalproject.o
+ .rodata.letterC
+                0x00000000        0x1 finalproject.o
+ .rodata.letterB
+                0x00000000        0x1 finalproject.o
+ .rodata.letterA
+                0x00000000        0x1 finalproject.o
  .text          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_exit.o)
  .data          0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_exit.o)
  .bss           0x00000000        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_exit.o)
@@ -202,7 +221,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000      0xae4
+.text           0x00000000     0x1188
  *(.vectors)
  .vectors       0x00000000       0x8c c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51/crtm1284.o
                 0x00000000                __vector_default
@@ -218,44 +237,59 @@ END GROUP
  *(.trampolines*)
                 0x000000f2                __trampolines_end = .
  *(.progmem*)
- .progmem.data.filledcircle
+ .progmem.data.level7
                 0x000000f2        0x8 finalproject.o
-                0x000000f2                filledcircle
- .progmem.data.LINE
+                0x000000f2                level7
+ .progmem.data.level6
                 0x000000fa        0x8 finalproject.o
-                0x000000fa                LINE
+                0x000000fa                level6
+ .progmem.data.level5
+                0x00000102        0x8 finalproject.o
+                0x00000102                level5
+ .progmem.data.level4
+                0x0000010a        0x8 finalproject.o
+                0x0000010a                level4
+ .progmem.data.level3
+                0x00000112        0x8 finalproject.o
+                0x00000112                level3
+ .progmem.data.level2
+                0x0000011a        0x8 finalproject.o
+                0x0000011a                level2
+ .progmem.data.level1
+                0x00000122        0x8 finalproject.o
+                0x00000122                level1
  .progmem.data.Sinewave
-                0x00000102       0xc0 finalproject.o
-                0x00000102                Sinewave
-                0x000001c2                . = ALIGN (0x2)
+                0x0000012a       0xc0 finalproject.o
+                0x0000012a                Sinewave
+                0x000001ea                . = ALIGN (0x2)
  *(.jumptables)
  *(.jumptables*)
  *(.lowtext)
  *(.lowtext*)
-                0x000001c2                __ctors_start = .
+                0x000001ea                __ctors_start = .
  *(.ctors)
-                0x000001c2                __ctors_end = .
-                0x000001c2                __dtors_start = .
+                0x000001ea                __ctors_end = .
+                0x000001ea                __dtors_start = .
  *(.dtors)
-                0x000001c2                __dtors_end = .
+                0x000001ea                __dtors_end = .
  SORT(*)(.ctors)
  SORT(*)(.dtors)
  *(.init0)
- .init0         0x000001c2        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51/crtm1284.o
-                0x000001c2                __init
+ .init0         0x000001ea        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51/crtm1284.o
+                0x000001ea                __init
  *(.init0)
  *(.init1)
  *(.init1)
  *(.init2)
- .init2         0x000001c2        0xc c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51/crtm1284.o
+ .init2         0x000001ea        0xc c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51/crtm1284.o
  *(.init2)
  *(.init3)
  *(.init3)
  *(.init4)
- .init4         0x000001ce       0x1a c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_copy_data.o)
-                0x000001ce                __do_copy_data
- .init4         0x000001e8       0x10 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_clear_bss.o)
-                0x000001e8                __do_clear_bss
+ .init4         0x000001f6       0x1a c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_copy_data.o)
+                0x000001f6                __do_copy_data
+ .init4         0x00000210       0x10 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_clear_bss.o)
+                0x00000210                __do_clear_bss
  *(.init4)
  *(.init5)
  *(.init5)
@@ -266,96 +300,99 @@ END GROUP
  *(.init8)
  *(.init8)
  *(.init9)
- .init9         0x000001f8        0x4 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51/crtm1284.o
+ .init9         0x00000220        0x4 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51/crtm1284.o
  *(.init9)
  *(.text)
- .text          0x000001fc        0x2 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51/crtm1284.o
-                0x000001fc                __vector_22
-                0x000001fc                __vector_28
-                0x000001fc                __vector_1
-                0x000001fc                __vector_32
-                0x000001fc                __vector_34
-                0x000001fc                __vector_24
-                0x000001fc                __vector_12
-                0x000001fc                __bad_interrupt
-                0x000001fc                __vector_6
-                0x000001fc                __vector_31
-                0x000001fc                __vector_3
-                0x000001fc                __vector_23
-                0x000001fc                __vector_30
-                0x000001fc                __vector_25
-                0x000001fc                __vector_11
-                0x000001fc                __vector_17
-                0x000001fc                __vector_19
-                0x000001fc                __vector_7
-                0x000001fc                __vector_27
-                0x000001fc                __vector_5
-                0x000001fc                __vector_33
-                0x000001fc                __vector_4
-                0x000001fc                __vector_9
-                0x000001fc                __vector_2
-                0x000001fc                __vector_21
-                0x000001fc                __vector_15
-                0x000001fc                __vector_29
-                0x000001fc                __vector_8
-                0x000001fc                __vector_26
-                0x000001fc                __vector_14
-                0x000001fc                __vector_10
-                0x000001fc                __vector_16
-                0x000001fc                __vector_18
-                0x000001fc                __vector_20
-                0x000001fe                . = ALIGN (0x2)
+ .text          0x00000224        0x2 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr51/crtm1284.o
+                0x00000224                __vector_22
+                0x00000224                __vector_28
+                0x00000224                __vector_1
+                0x00000224                __vector_32
+                0x00000224                __vector_34
+                0x00000224                __vector_24
+                0x00000224                __vector_12
+                0x00000224                __bad_interrupt
+                0x00000224                __vector_6
+                0x00000224                __vector_31
+                0x00000224                __vector_3
+                0x00000224                __vector_23
+                0x00000224                __vector_30
+                0x00000224                __vector_25
+                0x00000224                __vector_11
+                0x00000224                __vector_17
+                0x00000224                __vector_19
+                0x00000224                __vector_7
+                0x00000224                __vector_27
+                0x00000224                __vector_5
+                0x00000224                __vector_33
+                0x00000224                __vector_4
+                0x00000224                __vector_9
+                0x00000224                __vector_2
+                0x00000224                __vector_21
+                0x00000224                __vector_15
+                0x00000224                __vector_29
+                0x00000224                __vector_8
+                0x00000224                __vector_26
+                0x00000224                __vector_14
+                0x00000224                __vector_10
+                0x00000224                __vector_16
+                0x00000224                __vector_18
+                0x00000224                __vector_20
+                0x00000226                . = ALIGN (0x2)
  *(.text.*)
- .text.TimerOn  0x000001fe       0x48 finalproject.o
-                0x000001fe                TimerOn
+ .text.TimerOn  0x00000226       0x48 finalproject.o
+                0x00000226                TimerOn
  .text.__vector_13
-                0x00000246       0x78 finalproject.o
-                0x00000246                __vector_13
+                0x0000026e       0x78 finalproject.o
+                0x0000026e                __vector_13
  .text.delay_ms
-                0x000002be       0x2e finalproject.o
-                0x000002be                delay_ms
+                0x000002e6       0x2e finalproject.o
+                0x000002e6                delay_ms
  .text.LCD_WriteCommand
-                0x000002ec       0x12 finalproject.o
-                0x000002ec                LCD_WriteCommand
+                0x00000314       0x12 finalproject.o
+                0x00000314                LCD_WriteCommand
  .text.LCD_ClearScreen
-                0x000002fe        0x6 finalproject.o
-                0x000002fe                LCD_ClearScreen
+                0x00000326        0x6 finalproject.o
+                0x00000326                LCD_ClearScreen
  .text.LCD_Cursor
-                0x00000304       0x10 finalproject.o
-                0x00000304                LCD_Cursor
+                0x0000032c       0x10 finalproject.o
+                0x0000032c                LCD_Cursor
  .text.LCD_init
-                0x00000314       0x1e finalproject.o
-                0x00000314                LCD_init
+                0x0000033c       0x1e finalproject.o
+                0x0000033c                LCD_init
  .text.LCD_WriteData
-                0x00000332       0x12 finalproject.o
-                0x00000332                LCD_WriteData
+                0x0000035a       0x12 finalproject.o
+                0x0000035a                LCD_WriteData
  .text.LCD_DisplayString
-                0x00000344       0x34 finalproject.o
-                0x00000344                LCD_DisplayString
+                0x0000036c       0x34 finalproject.o
+                0x0000036c                LCD_DisplayString
  .text.Write7Seg
-                0x00000378      0x14a finalproject.o
-                0x00000378                Write7Seg
- .text.fix_fft  0x000004c2      0x3d8 finalproject.o
-                0x000004c2                fix_fft
+                0x000003a0      0x14a finalproject.o
+                0x000003a0                Write7Seg
+ .text.fix_fft  0x000004ea      0x3d8 finalproject.o
+                0x000004ea                fix_fft
  .text.fix_fftr
-                0x0000089a       0x98 finalproject.o
-                0x0000089a                fix_fftr
+                0x000008c2       0x98 finalproject.o
+                0x000008c2                fix_fftr
+ .text.toneBars
+                0x0000095a      0x54c finalproject.o
+                0x0000095a                toneBars
  .text.ADC_init
-                0x00000932        0xc finalproject.o
-                0x00000932                ADC_init
+                0x00000ea6        0xc finalproject.o
+                0x00000ea6                ADC_init
  .text.LCDdefinechar
-                0x0000093e       0x44 finalproject.o
-                0x0000093e                LCDdefinechar
- .text.main     0x00000982      0x152 finalproject.o
-                0x00000982                main
- .text.libgcc   0x00000ad4        0xc c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_tablejump.o)
-                0x00000ad4                __tablejump2__
-                0x00000ad8                __tablejump__
-                0x00000ae0                . = ALIGN (0x2)
+                0x00000eb2       0x44 finalproject.o
+                0x00000eb2                LCDdefinechar
+ .text.main     0x00000ef6      0x282 finalproject.o
+                0x00000ef6                main
+ .text.libgcc   0x00001178        0xc c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_tablejump.o)
+                0x00001178                __tablejump2__
+                0x0000117c                __tablejump__
+                0x00001184                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00000ae0        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_exit.o)
-                0x00000ae0                _exit
-                0x00000ae0                exit
+ .fini9         0x00001184        0x0 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_exit.o)
+                0x00001184                _exit
+                0x00001184                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -374,11 +411,11 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00000ae0        0x4 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_exit.o)
+ .fini0         0x00001184        0x4 c:/program files (x86)/atmel/atmel toolchain/avr8 gcc/native/3.4.1061/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.8.1/avr51\libgcc.a(_exit.o)
  *(.fini0)
-                0x00000ae4                _etext = .
+                0x00001188                _etext = .
 
-.data           0x00800100       0x12 load address 0x00000ae4
+.data           0x00800100        0xa load address 0x00001188
                 0x00800100                PROVIDE (__data_start, .)
  *(.data)
  *(.data*)
@@ -388,33 +425,33 @@ END GROUP
  *(.rodata)
  *(.rodata*)
  .rodata.str1.1
-                0x00800104        0xe finalproject.o
+                0x00800104        0x6 finalproject.o
  *(.gnu.linkonce.d*)
-                0x00800112                . = ALIGN (0x2)
-                0x00800112                _edata = .
-                0x00800112                PROVIDE (__data_end, .)
+                0x0080010a                . = ALIGN (0x2)
+                0x0080010a                _edata = .
+                0x0080010a                PROVIDE (__data_end, .)
 
-.bss            0x00800112        0x5
-                0x00800112                PROVIDE (__bss_start, .)
+.bss            0x0080010a        0x5
+                0x0080010a                PROVIDE (__bss_start, .)
  *(.bss)
  *(.bss*)
  .bss._avr_timer_cntcurr
-                0x00800112        0x4 finalproject.o
-                0x00800112                _avr_timer_cntcurr
+                0x0080010a        0x4 finalproject.o
+                0x0080010a                _avr_timer_cntcurr
  .bss.TimerFlag
-                0x00800116        0x1 finalproject.o
-                0x00800116                TimerFlag
+                0x0080010e        0x1 finalproject.o
+                0x0080010e                TimerFlag
  *(COMMON)
-                0x00800117                PROVIDE (__bss_end, .)
-                0x00000ae4                __data_load_start = LOADADDR (.data)
-                0x00000af6                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x0080010f                PROVIDE (__bss_end, .)
+                0x00001188                __data_load_start = LOADADDR (.data)
+                0x00001192                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x00800117        0x0
-                0x00800117                PROVIDE (__noinit_start, .)
+.noinit         0x0080010f        0x0
+                0x0080010f                PROVIDE (__noinit_start, .)
  *(.noinit*)
-                0x00800117                PROVIDE (__noinit_end, .)
-                0x00800117                _end = .
-                0x00800117                PROVIDE (__heap_start, .)
+                0x0080010f                PROVIDE (__noinit_end, .)
+                0x0080010f                _end = .
+                0x0080010f                PROVIDE (__heap_start, .)
 
 .eeprom         0x00810000        0x0
  *(.eeprom*)
@@ -473,38 +510,38 @@ END GROUP
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x00000000       0xa8
+.debug_aranges  0x00000000       0xb0
  *(.debug_aranges)
  .debug_aranges
-                0x00000000       0xa8 finalproject.o
+                0x00000000       0xb0 finalproject.o
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000      0xd9c
+.debug_info     0x00000000     0x2a88
  *(.debug_info .gnu.linkonce.wi.*)
- .debug_info    0x00000000      0xd9c finalproject.o
+ .debug_info    0x00000000     0x2a88 finalproject.o
 
-.debug_abbrev   0x00000000      0x2af
+.debug_abbrev   0x00000000      0x2cd
  *(.debug_abbrev)
- .debug_abbrev  0x00000000      0x2af finalproject.o
+ .debug_abbrev  0x00000000      0x2cd finalproject.o
 
-.debug_line     0x00000000      0x938
+.debug_line     0x00000000     0x12fe
  *(.debug_line .debug_line.* .debug_line_end)
- .debug_line    0x00000000      0x938 finalproject.o
+ .debug_line    0x00000000     0x12fe finalproject.o
 
 .debug_frame    0x00000000      0x248
  *(.debug_frame)
  .debug_frame   0x00000000      0x248 finalproject.o
 
-.debug_str      0x00000000      0x47a
+.debug_str      0x00000000      0x50c
  *(.debug_str)
- .debug_str     0x00000000      0x47a finalproject.o
-                                0x4c7 (size before relaxing)
+ .debug_str     0x00000000      0x50c finalproject.o
+                                0x559 (size before relaxing)
 
-.debug_loc      0x00000000     0x140d
+.debug_loc      0x00000000     0x178e
  *(.debug_loc)
- .debug_loc     0x00000000     0x140d finalproject.o
+ .debug_loc     0x00000000     0x178e finalproject.o
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -524,9 +561,9 @@ END GROUP
 .debug_pubtypes
  *(.debug_pubtypes)
 
-.debug_ranges   0x00000000      0x120
+.debug_ranges   0x00000000      0x128
  *(.debug_ranges)
- .debug_ranges  0x00000000      0x120 finalproject.o
+ .debug_ranges  0x00000000      0x128 finalproject.o
 
 .debug_macro
  *(.debug_macro)
